@@ -18,7 +18,7 @@ public class CheckController {
     //接收浏览器传入的请求，设置路径和请求方式为post请求
     @RequestMapping(value = "/add",method = RequestMethod.POST)
     public User fileAdd(@RequestParam("file") MultipartFile file , HttpServletRequest request){
-
+        System.out.println(3412414);
         //获取上传文件的原名称
         String originalFilename = file.getOriginalFilename();
 
